@@ -1,0 +1,85 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {  
+  --pink-light: #C59DD2;
+  --pink-base:#9547A5;
+  --pink-dark: #7D298A;
+  --pink-low: #3F0F41;
+  --blue-light:#73B6D2;
+  --blue-base:#358BB9;
+  --blue-mid:#2374A4;
+  --blue-dark:#144A72;
+  --blue-low:#08233C;
+  --shape-stroke:#002347;
+  --shape-hover:#001933;
+  --shape-base:#000F1F;
+  --shape-background:#0a0001;
+
+  --text-title:#F8FBFB;
+  --text-body:#E2E7E9;
+  --text-label:#BAC6C9;
+
+  --ff-base: 'Raleway', sans-serif;
+
+  --title-lg: 800 5rem var(--ff-base);;
+  --title-md: 800 2.5rem var(--ff-base);;
+  --title-sm: 800 2rem var(--ff-base);; 
+  --title-xs: 800 1rem  var(--ff-base);;
+
+  --subtitle: 600 2rem/200% var(--ff-base);
+
+  --body-lg: 500 1.25rem/140% var(--ff-base);
+  --body-md: 500 1rem/140% var(--ff-base);
+  --body-sm: 500 .875rem/140% var(--ff-base);
+  --body-xs: 500 .75rem/140% var(--ff-base);
+
+  --button: 800 .875rem var(--ff-base);
+
+  --link: .500 .875rem var(--ff-base);
+  
+  --tag: 800 .625rem/upercase var(--ff-base);
+
+  --max-width: 80em;
+}
+
+ul[role="list"] {
+    list-style: none;
+}
+
+html, button {
+  color: white;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--shape-background);
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+font-size: var(--title-lg:);
+
+}
+
+h2 {
+  font-size: var(--subtitle);
+ }
+
+ h3 {
+  font-size: var(--body-md);
+ }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+

@@ -1,0 +1,17 @@
+.gap-one {
+    gap: 1rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.center-itens {
+    align-items: center;
+    justify-content: center;
+}
+
