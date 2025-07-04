@@ -1,0 +1,94 @@
+.hero {  
+    background-image: url(../assets/imagens/hero-background.png);
+    background-position: center;
+    background-size: cover;   
+    padding-bottom: 15rem;   
+    position: relative;    
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 60%;
+    left: 0;
+    bottom: -3rem;
+    filter: blur(250px);    
+    }
+    
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 80%;
+    right: 0;
+    bottom: -12rem;
+    filter: blur(250px);    
+    }
+
+  & span  {    
+    margin-inline: auto;
+    justify-content: center;
+    padding: 3.5rem;
+
+  & .botton {
+    position: relative;
+    background-color: var(--pink-dark);
+    padding: .75rem 1.25rem;
+    border-radius: .5rem;
+    color: var(--text-title);
+    font: Bold .875rem/100% var(--font-family);        
+    z-index: 1;  
+
+  &::before {
+    content: "";
+    background-color: var(--pink-base);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: inherit;
+    z-index: -1;
+    clip-path: circle(5%);
+    transition: clip-path 1s ease-in-out;
+    }
+
+  &:hover::before {
+    clip-path: circle(100%);
+    scale: 1.2;
+    border: solid .5px blanchedalmond;    
+  }
+  }
+  }
+
+ & header {
+    padding: 3rem;
+    padding-inline: 1.25rem;
+    max-width: var(--max-width);
+    margin-inline: auto;
+    text-align: center;
+ }
+
+  & h1 {   
+    color: var(--text-title);
+    opacity: -3;
+    animation: text-appear 3s 1s ease-out both infinite;
+}
+
+  & h3 {       
+    opacity: -1;
+    animation: text-appear 5s 3s ease-out both infinite; 
+}
+}
+
+ .container-button {
+ gap: 20rem;  
+ }
+
+  @keyframes text-appear {
+    100% {
+        opacity: 1;
+    }
+}
+
+
