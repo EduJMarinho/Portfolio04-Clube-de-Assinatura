@@ -2,11 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+  }
+
+  .animation-books{
+    padding-top: 10rem;
+  }
+
 .books {    
   max-width: 100%;
-  min-height: 45rem;
-  /* margin-inline: auto;   */
+  min-height: 45rem; 
   }
   
  .kit {
@@ -42,77 +46,56 @@
   color: var(--blue-light);
   }
 
-
 /* inicio das animações livro O Castelo da Colina */
 
-.imgbooks {
-  border: solid blue 3px;
-  position: relative;
-  /* display: inline-block; */
+.imgbooks { 
+  position: relative;  
   text-align: center;
- width: 35rem;
-    height: 41rem;
-    bottom: 15rem;
-  /* overflow: hidden; */
-
-}
+  width: 35rem;
+  height: 41rem;
+  bottom: 15rem;  
+  }
 
 
   & img[src*="castle"] {
     position: absolute;
     top: 2rem;
     left: 2rem;
-    width: 467px;
-    height: 617px; 
-    /* margin-left: 2.5rem;  */
+    width: 29rem;
+    height: 38.5rem;    
     filter: drop-shadow(0 0 1rem rgb(71, 68, 64));
-    border-radius: .5rem;
-    opacity: .9;
-    z-index: 1;
-    }
-
-    /* & img:not([src*="castle"]),
-    span { */
-      /* position: absolute; */
-      /* z-index: -1; */
-    /* } */
+    border-radius: .5rem;    
+    z-index: 1;    
+    }    
 
     & img[src*="yellow"] {   
       position: absolute;    
-      width: 10rem;
+      width: 15rem;
       height: 30rem ;
       left: 26rem;
-      bottom: 6rem;
-      
-      /* right: 28rem; */
-      /* z-index: 0;      */
-      /* transition: 1s ease; */
-  z-index: 0;
-  animation: yellow-book 10s 5s ease-in-out infinite;
-  transform: rotate(16deg); 
-    }
+      bottom: 6rem;      
+      z-index: 0;
+      animation: yellow-book 10s 5s ease-in-out infinite;
+      transform: rotate(16deg); 
+      }
     
     & img[src*="purple"] {
       position: absolute;  
-      width: 12rem;
+      width: 10rem;
       height: 33rem ;
-      left: 37rem;      
-      
-      /* transition: 500ms ease; */
-  transform: rotate(22deg);
-  animation: purple-book 10s 5s ease-in-out infinite; 
+      left: 37rem;        
+      transform: rotate(22deg);
+      animation: purple-book 10s 5s ease-in-out infinite; 
     }
 
     & img[src*="botton"] {
       position: absolute;
       height: 13.8rem ; 
-      transform: rotate(-8deg);
-      /* bottom: 2rem; */
-      /* left: 8rem; */
+      transform: rotate(-8deg);      
       transform: rotate(-20deg);
-transition: 1s;
-animation: botton-book 10s 5s ease-in-out infinite;
-}
+      transition: 1s;
+      animation: botton-book 10s 5s ease-in-out infinite;
+    }
 
     #one {      
       display: inline-block;     
@@ -126,10 +109,8 @@ animation: botton-book 10s 5s ease-in-out infinite;
   }
   & h3 {
     margin-right: 6rem;
-    white-space: nowrap;
-    
-  }
-  
+    white-space: nowrap;    
+  }  
 }
 
 #two {
@@ -142,8 +123,7 @@ animation: botton-book 10s 5s ease-in-out infinite;
   & img {
     margin-right: 7rem;
   }
-  & h3 {
-    /* margin-left: 6rem; */
+  & h3 {   
     white-space: nowrap;
   }
 }
@@ -151,8 +131,11 @@ animation: botton-book 10s 5s ease-in-out infinite;
 & #three {
   position: absolute;
   display: inline-block;     
-  transform: rotate(-14deg);
+  transform: rotate(-24deg);
   animation: arrow-three 10s 5s ease-in-out infinite;
+  margin-top: 15rem;  
+  left: 2rem;
+  width: 15rem;
 
    & img {    
     margin-left: 5rem;
@@ -165,87 +148,79 @@ animation: botton-book 10s 5s ease-in-out infinite;
   /* animações Keyframe */
 
 @keyframes yellow-book {
-  10% {
-    width: 15rem;
-    left: 10rem;
+  10% {    
+    left: 12rem;
     top: 5rem;
   }
-  20% {
-    width: 15rem;
-    left: 33rem;
+  20% {    
+    right: 33rem;
     top: 10rem;
   }
-  30% {
-    width: 15rem;
+  30% {    
     right: 38rem;
-    top: 12rem;
+    top: 10rem;
   }
-  50% {
-    width: 15rem;
+  50% {    
     right: 39rem;
-    top: 13rem;
+    top: 11rem;
   }
-  60% {
-    width: 15rem;
+  60% {    
     right: 37rem;
     top: 7rem;
   }
-  70% {
-    width: 15rem;
+  70% {    
     right: 35rem;
     top: 7rem;
   }   
-  80% {
-    width: 15rem;
+  80% {    
     right: 35rem;
     top: 7rem;
   }
-  90% {
-    width: 15rem;
-    right: 35rem;
+  90% {    
+    right: 18rem;
     top: 6rem;
   }    
-  100% {
-   width: 15rem;
-    left: 10rem;
+  100% {   
+    right: 5rem;
     top: 5rem;
   }
 }
 
 @keyframes purple-book {
-  10% {
-    width: 11rem;
-    left: 10rem;
+  10% {    
+    left: 12rem;
     top: 5rem;
   }
-  20% {
-    width: 11rem;
-    left: 18rem;
+  20% {    
+    right: 33rem;
     top: 10rem;
-  }  
-  50% {
-    width: 11rem;
-    left: 21rem;
-    top: 13rem;
   }
-  60% {
-    width: 11rem;
-   left: 28rem;
-    top: 14rem;
+  30% {    
+    right: 38rem;
+    top: 10rem;
   }
-  70% {
-    width: 11rem;
-   left: 31rem;
-    top: 15rem;
-  }     
-  80% {
-    width: 11rem;
-    left: 33rem;
-    top: 13rem;
-  }  
-  100% {
-    width: 11rem;
-    left: 10rem;
+  50% {    
+    right: 39rem;
+    top: 11rem;
+  }
+  60% {    
+    right: 37rem;
+    top: 12rem;
+  }
+  70% {    
+    right: 39rem;
+    top: 12rem;
+  }   
+  80% {    
+    right: 39rem;
+    top: 7rem;
+  }
+  90% {    
+    right: 18rem;
+    top: 6rem;
+  }    
+  100% {   
+    right: 5rem;
     top: 5rem;
   }
 }
@@ -332,43 +307,37 @@ animation: botton-book 10s 5s ease-in-out infinite;
 }
 
 @keyframes arrow-three {
-  10% {
-    width: 11rem;
-    left: 10rem;
+  50% {     
+   left: 12rem;
     top: 5rem;
-  }
-  20% {
-    width: 11rem;
-    left: 15rem;
-    top: 40rem;
-  }  
-  50% {
-    width: 11rem;
-    left: 17rem;
-    top: 43rem;
-  }
-  60% {
-    width: 11rem;
-   left: 24rem;
-    top: 44rem;
-  }
-  70% {
-    width: 11rem;
-   left: 27rem;
-    top: 45rem;
-  }     
-  80% {
-    width: 11rem;
+  } 
+   60% {    
     left: 29rem;
-    top: 43rem;
+    top: 20rem;
   }  
-  100% {
-    width: 11rem;
+  75% {    
+    left: 30rem;
+    top: 20rem;
+  }   
+   80% {    
+    left: 32rem;
+    top: 16rem;
+  }  
+  85% {    
+    left: 33rem;
+    top: 15rem;
+  }     
+  90% {    
+    left: 34rem;
+    top: 15rem;
+  }    
+  95% {    
+    left: 18rem;
+    top: 16rem;
+  }    
+  100% {    
     left: 10rem;
-    top: 5rem;
+    top: 9rem;
+  }      
   }
-}
-
-
-
-
+  

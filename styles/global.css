@@ -23,7 +23,6 @@ section, div, img, h1, span {
   max-width: 100%;
 }
 
-
 :root {  
   --pink-light: #C59DD2;
   --pink-base:#9547A5;
@@ -115,7 +114,7 @@ a {
 
 /* Destaca TODOS os elementos para observação durante o trabalho*/
 * {
-  outline: 1px dashed rgb(34, 248, 14);
+  /* outline: 1px dashed rgb(34, 248, 14); */
 }
 
 
