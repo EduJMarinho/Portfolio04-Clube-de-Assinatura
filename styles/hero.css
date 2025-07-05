@@ -12,7 +12,7 @@
     height: 60%;
     left: 0;
     bottom: -3rem;
-    filter: blur(250px);    
+    filter: blur(16rem);    
     }
     
   &::after {
@@ -22,7 +22,7 @@
     height: 80%;
     right: 0;
     bottom: -12rem;
-    filter: blur(250px);    
+    filter: blur(16rem);    
     }
 
   & span  {    
@@ -70,6 +70,7 @@
  }
 
   & h1 {   
+    font-size: 1.5rem;
     color: var(--text-title);
     opacity: -3;
     animation: text-appear 3s 1s ease-out both infinite;
@@ -82,7 +83,7 @@
 }
 
  .container-button {
- gap: 20rem;  
+ gap: 25rem;  
  }
 
   @keyframes text-appear {
@@ -90,5 +91,7 @@
         opacity: 1;
     }
 }
+
+
 
 

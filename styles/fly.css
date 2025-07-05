@@ -1,0 +1,69 @@
+.fly { 
+max-width: 100%;
+margin-inline: auto;
+margin-top: 10rem;
+text-align: center;
+animation: books-appear linear backwards;
+& img {
+  padding-top: 1rem;
+  opacity: 0;
+  animation: books-appear 7s ease-out both, icons-appear 7s 3s ease both;   
+}
+ }
+
+.book-blue { 
+  padding-bottom: 1rem;  
+  } 
+  
+& h2:hover {
+  scale: 1.2;
+}
+
+& b{
+  color: var(--blue-light);  
+}
+
+& b:hover{
+  color: var(--blue-low); 
+  scale: 1.5; 
+}
+
+& div {
+  display: flex;
+  justify-content: space-between;  
+}
+
+& .image1:hover {
+  transform: rotateX(50deg);
+  scale: 1.3;
+  filter: drop-shadow(10px 5px 5px rgba(221, 221, 222, 0.585));
+}
+
+& .image2:hover {
+  transform: rotate(25deg);
+  scale: 1.2 ;
+  filter: drop-shadow(10px 5px 5px rgba(221, 221, 222, 0.585));
+}
+
+& .image3:hover {
+  transform: rotate(-30deg);
+  scale: 1.3;
+  filter: drop-shadow(10px 5px 5px rgba(221, 221, 222, 0.585));  
+}
+ 
+h2 {
+  font-size: 1.5rem;
+}
+
+ @keyframes books-appear {
+   from {      
+      transform: translateY(50%);           
+    }
+  }
+
+  @keyframes icons-appear {
+    100% {
+        opacity: 1;
+    }
+  }
+
