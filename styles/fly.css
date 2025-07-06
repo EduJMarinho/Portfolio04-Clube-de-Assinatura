@@ -9,7 +9,7 @@ animation: books-appear linear backwards;
   opacity: 0;
   animation: books-appear 7s ease-out both, icons-appear 7s 3s ease both;   
 }
- }
+}
 
 .book-blue { 
   padding-bottom: 1rem;  
