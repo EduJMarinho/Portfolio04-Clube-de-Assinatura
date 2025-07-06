@@ -1,7 +1,9 @@
 footer {
     justify-content: space-between;
     align-items:center ;    
-    background-image: url(assets/imagens/book-trace-background.png);    
+    
+    background: url(/Portfolio04-Clube-de-Assinatura/assets/images/book-trace-background.png) no-repeat;
+
     padding: 5rem;
     height: auto;
     min-height: 31rem;  
